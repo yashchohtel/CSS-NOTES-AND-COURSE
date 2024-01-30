@@ -511,5 +511,3 @@ it is used to add content after an element
     background-color: blue;
 } 
 it is used to add selection property
-
-
