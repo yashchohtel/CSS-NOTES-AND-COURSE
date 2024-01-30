@@ -1,61 +1,9 @@
-QUE 1 :- What is CSS
-Css stands for Cascading Style Sheets (css). It is a stylesheet language sued to descride the look And presentation of a document writen in HTML or XML. It defines how elements are displayed on a web page. Css makes website visually appealing and user-friendly.
-
---------------------------------------------------------
-
-QUE 2 :- Creators and Maintenance of CSS?
-. Css was created by a group of indivisuals known as the world wide web consortium (W3C).
-. Primary contributors include Hakon Wiem Lie and Bert Bos.
-. Css standards and specifications are maintained by the W3C.
-. A community of web developers, designers, and browser vendors also contribute to its evolution.
-. Regular updates and new versions ensue css remais relevant and adaptable to changing web design needs.
-
-
---------------------------------------------------------
-
-QUE 3 :- CSS Rule structure ?
-. A css rule consists of a selector and a declaration block.
-. declaration are used to define the style properties for the selector elements.
-. Each declaration consists of a property and a value.
-
-selector {
-    property: value;
-}
-
-h1 {
-    color: red;
-    font-size: 32px;
-}
-
-here h1 is selector curly brackets are declaration block and color is property and red is value of the property.
-
-
---------------------------------------------------------
-
-QUE 4 :- Three Waus to write css?
-. Inline CSS -> Style applied directly to on html element using the style attribute.
-<h1 style="color: blue;" >THIS IS HEADING</h1>.
-
-. Internal CSs -> Styles defined within the <style> tag within the HTML document's <head>.
-<style>
-    h1 {
-        color: white;
-        font-size: 12px;
-    }
-</style>
-
-. External CSS -> Styles stored in separate .css files linked to the html document using the <link> element. 
-<link rel="stylesheet" href="css file link">
-
---------------------------------------------------------
-
-QUE 5 :- What is css selectors?
-CSS selectors are used to "find" (or select) the HTML elements you want to style.
+/* 
 
 What is css selectors?
 CSS selectors are used to "find" (or select) the HTML elements you want to style.
 
-----------------
+---------------------------------------------------------------------------------
 
 [I. SIMPLE SELECTOR]
 
@@ -121,7 +69,7 @@ In this example the <p> element will be styled according to class="center" and t
 
 <p class="center large">This paragraph refers to two classes.</p>
 
-----------------
+---------------------------------------------------------------------------------
 
 [II. COMBINATORY SELECTORS]
 
@@ -163,7 +111,7 @@ div ~ p {
   background-color: yellow;
 }
 
-----------------
+---------------------------------------------------------------------------------
 
 [III. ATTRIBUTE SELECTOR]
 
@@ -241,7 +189,7 @@ Example
   background: yellow;
 }
 
-----------------
+---------------------------------------------------------------------------------
 
 [IV. PSEUDO-CLASSES]
 
@@ -478,7 +426,7 @@ form:focus-within{
     background-color: hotpink;
 }
 
-----------------
+---------------------------------------------------------------------------------
 
 [IV. PSEUDO-ELEMENT]
 
@@ -511,6 +459,7 @@ it is used to add content after an element
 } 
 it is used to add selection property
 
+*/
 
 
 
@@ -537,30 +486,3 @@ it is used to add selection property
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
---------------------------------------------------------
-
-QUE :-

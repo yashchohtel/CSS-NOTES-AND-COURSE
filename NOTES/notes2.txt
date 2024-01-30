@@ -1,0 +1,1008 @@
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+1. INTRODUCTION 
+1. INTRODUCTION 
+1. INTRODUCTION 
+
+FULL FORM OF CSS => CASCADING STYLE SHEET.
+CSS describes how html elements are to be displayed on screen, paper, or in other media.
+HTML -> What  to  displayed.
+CSS -> How to diaplay.
+
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+2. CSS SYNTAX
+2. CSS SYNTAX
+2. CSS SYNTAX
+
+p{
+    color: blue;
+} 
+
+here p (SELECTOR) select HTML elements to style 
+color is property name its means we are applaying color 
+blue is the value of the property 
+
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+3. HOW TO ADD CSS
+3. HOW TO ADD CSS
+3. HOW TO ADD CSS
+
+There are three ways to insert css
+1. External CSS => external css is when we link a external css file in html head tag by link tag and then give file path. And then write css in css file 
+ex- <link rel="stylesheet" href="/css/style.css">
+______________________________
+2. Internal CSS => internal css is when we write style in html tag by  style tag. And then write css inside style tag.
+ex- <style> </style>.
+______________________________
+3. Inline CSS. => Inline css when we wrtie css inside tags of thml by add style attribute and then write css inside style attribute.
+ex- style="color: gray;"  
+
+in all three on them Inline css has most priorty and betwwen internal and external it depends. which one write first it got least property last writen style has upper most priorty in both of them.
+
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+4. CSS SELECTOR
+4. CSS SELECTOR
+4. CSS SELECTOR
+
+To style the html elements we have to select the tag and then style. We have basically (there are more than that byt basically we have three).
+
+1. Element selector => when we select use element selector it select all element on select tag in html page and applay them same style.
+ex- p{
+    color: red;
+    }
+______________________________
+2. Id selector => to give indivisual indetity to every element in web page we use id. there will be only one id of  same name id shoue only be one. it is used to select only one element. and to style id we write # and then id name and curlybracket then property than value.
+ex- id="p_1" 
+______________________________
+#p_1{
+ color: red;
+}
+______________________________
+3. Class selector => it is used to select more than one element and we can style different element by only one class. and class it write by (.) dot and then write class name and then  write style. and we can give more than one clssed to same element.
+
+
+priorty = id>class>element
+
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+5. CSS COMMENTS
+5. CSS COMMENTS
+5. CSS COMMENTS
+
+css comments are used to comments 
+
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+6. CSS COLORS
+6. CSS COLORS
+6. CSS COLORS
+
+colors are used to add colors on element. color is added by color property
+ex - color: red;
+______________________________
+in css colors can be specified using
+______________________________
+1. color name => simple colors modern browsers suport 140 named colors.
+ex- red, blue, etc.
+______________________________
+2. rgb => rgb(red,green,blue). we have to give red green and blue its points betwwen 0 to 255. 
+rgb(0,0,0) => black
+rgb(255,255,255) => white
+rgb(255,0,0) => red
+rgb(0,255,0) => green
+rgb(0,0,255) => green
+
+______________________________
+3. rgba =>  rgba(red,green,blue,alpha)
+alpha parameter is a number between 0.0(fully transparent) and 1.0 (not transparent at all)
+ex- rgba(255,255,255,0.7)
+______________________________
+4.hex => #rrggbb rr(red), gg(green), bb(blue) hexadecimal value between 00 and ff (same as deficmal 0-255)
+red:#ff0000;
+red:#000000;
+red:#ffffff;
+______________________________
+5.hsl => hsl(hue,saturation,lightness)
+ex- RED:hsl(0,100%,50%)
+
+HUE is a degree on the color wheel from 0 to 360. 0is red, 120 is green, and 240 is blue.
+
+SATURARION is percentage value, 0% means a shade of gray, and 100% is the full color. 
+
+LIGHTNESS is also a percentage, 0% is black, 50% is neither light or dark 100% is white.
+
+______________________________
+6.hsla => hsla(hue, saturation, lightness, alpha)
+. alph parameter is a number between 0.0 (fully transparent) and 1.0 (not transparent al all)
+ex- ex- RED:hsla(0,100%,50%,0.5)
+
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+7. CSS BACKGROUND 
+7. CSS BACKGROUND 
+7. CSS BACKGROUND 
+
+BACKGROUND we have different property for background it is used to add style i n background of an element.
+______________________________
+background color => it is used to add color to background of an element.
+ex body{
+    background-color: rgba(0, 0, 255, 0.61);
+    }
+______________________________
+background image => it is used to add background image to the background of an element.
+ex- body {
+    background-image: url(/images/mother\ bord.jpg);
+}
+______________________________
+background repeat => it is used to style of repetation of image. background repeat has many values.
+
+background-repeat: no-repeat; (if we dont want to repeat).
+repeat-x = to repeat in x axis only.
+repeat-y = to repeat in y axis only.
+______________________________
+
+background position => it is used to add position of a background background position property has different values.
+top,center,bottom,rght,left.etc.
+we can also add position in px and percentage.
+______________________________
+
+background size => it is used to add background . it has different values.
+auto => it automaticlly takes the size.
+contain => it take as per the content.
+cover => it take the whole window size.
+
+we can also add background size in % and px
+______________________________
+
+background attactment => it is used to add attactment to the background. it has different values.
+
+scroll =. by default it has scroll it means it scrole with the content.
+
+fixed => it is used to set background attactment fixed if we use fixed it will dont move.
+______________________________
+
+background => it is a short hand property which is used to different styles of background in once.
+background: black url(/images/mother\ bord.jpg) no-repeat fixed center;
+color 
+image
+repeat
+attactment
+position
+
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+8. CSS BORDER
+8. CSS BORDER
+8. CSS BORDER
+
+it is used to add border on the content. we can add border of different style different color and different size.
+ex- p{
+    border: 1px solid black;
+}
+
+We can also add border in indivisual sides also by border - left right bottom top property.
+ex- p{
+    border-bottom: 1px solid black;
+}
+
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+9. CSS HEIGHT AND WIDTH 
+9. CSS HEIGHT AND WIDTH 
+9. CSS HEIGHT AND WIDTH 
+
+Height and width are use to add Height and width of an element. we can add Height and width by Height and width property. we can add Height and width in px and percentage. if we add pixel it will take as per pixel and if in percentage it will take according to the parent container if 50% it will width 50% of the parent container.
+
+#box{
+    width: 50%;
+    height:40%;
+}
+
+we can also add maximum and minimum to height and width
+#box{
+    background-color: green;
+    width: 50%;
+    height:50%;
+    max-width: 600px;
+    max-height: 800px;
+    min-width: 400px;
+    min-height: 300px;
+} 
+
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+10. CSS PADDING
+10. CSS PADDING
+10. CSS PADDING
+
+PADDING is the space between border and padding. we can also add padding in indivisual sides of element.
+
+.box{
+    border: 1px solid black;
+    padding: 40px;
+}
+
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+11. CSS MARGIN
+11. CSS MARGIN
+11. CSS MARGIN
+
+MARGIN is the psace between border and orther outer element. we can also add margin in indivisual sides of element.
+
+.box{
+    border: 1px solid black;
+    margin: 30px;
+}
+
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+12. CSS BOX MODEL
+12. CSS BOX MODEL
+12. CSS BOX MODEL
+
+When we set the width and height property of an element width css, we just set the width and height of the of the content area. to calculate the full size of an element, you must add padding, border and margins.
+
+Total element width = width + left-padding + right-padding + left-border + right-border + left-margin + right-margin
+Total element height = height + top-padding + bottom-padding + top-border + bottom-border + top-margin + bottom-margin
+
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+13. CSS TEXT
+13. CSS TEXT
+13. CSS TEXT
+
+operations width text.
+ 
+color - to add color to text.
+color: red;
+______________________________
+text aling - to add alingment in text it has four main property right left and center and juftify. by default it is left
+text-align: center;
+______________________________
+direction - to define direction of text by default it is left ot right. and we can make it right to left.
+direction: rtl;
+______________________________
+text decoration - it is used to decorate the text by default it is none. we can add underline ,overline, line through line property by text decoration property.
+text-decoration: underline;
+______________________________
+text transform - it is used to convert the text to lower case upper case and capitalize.
+text-transform: lowercase;
+______________________________
+line height - to add space between two line of text. we applay line height.
+line-height:30px;
+______________________________
+latter spaceing - to add space between to letters of a word.
+letter-spacing: 1px;
+______________________________
+word spaceing - to add space between 2 words.
+word-spaceing: 2px;
+______________________________
+text indextion - to add indextion to text.
+text-indent: 30px;
+______________________________
+white space pre - it is used to display text as it is. with br tag. we can add space and line brake on html and if we applay which space pre it will display text as it is.
+white-space: pre;
+______________________________
+font size - it is used to define font size of a text.
+font-size: 30px;
+______________________________
+text shadow - it is used to add shadow to text.
+text-shadow: horizontal vertical blur color;
+text-shadow: 5px 10px 10px coral;
+______________________________
+writeing mode - it is used to define write mode want to write horizontal or vertical. by default it is horizontal left to right.
+writing-mode: vertical-lr;
+
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+14. CSS LINKS
+14. CSS LINKS
+14. CSS LINKS
+
+link has four stage first :link, :visited, :hover, :active
+
+text decoration - to style link tag underline
+a{
+    text-decoration: none;
+}
+
+______________________________
+link - to give link color 
+a:link{
+    color: green;
+}
+______________________________
+visited - to add color to a link after the link is visited.
+a:visited{
+    color: black;
+}
+______________________________
+hover - to add color on hover of link
+a:hover{
+    color: orange;
+}
+______________________________
+active - to add style on link at actice stage when we clicking the link
+a:active{
+    color: blue;
+}
+
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+15. CSS FONTS
+15. CSS FONTS
+15. CSS FONTS
+
+FONTS - the type of text is fonts.
+
+font size - to set size of the text we use font size.
+font-size: 30px;
+______________________________
+font weight - it is used to add font weight. we can applay bold bolder and in point 100 - 900 100 is thiner and 900 us bolder (font weight is vary in there style)
+font-weight: bold;
+______________________________
+font-style - it is used to set font style to a text
+font-style: italic;
+______________________________
+font variant - it is used to define variation of text
+font-variant: small-caps;
+______________________________
+font family - it is used to add font family means style of a text .
+font-family: sans-serif;
+
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+16. CSS UNITS
+16. CSS UNITS
+16. CSS UNITS
+
+We use length in width, head, margin padding, font-size.
+
+There are two type of unites in css
+a) absolute - centimeter(cm), mm(milimeter), inch(inch), px(pixel), pt(), pc(pikas)
+cm - normaly centimeter
+mm - normaly milimeter
+in - normaly inch
+px - 1px (1inch = 96px) average
+pt - (1inch = 72pt) average
+pc - (1inch = 12pc) average
+______________________________
+
+b) relative - em(), rem(), vh(viewport height), vw(viewport width), %(percentage)
+Em - em is relative to the size of its direct parent
+Rem - remis only relative to root (html tag) size
+vh - 1% of view port height
+Vw - !1% of view port width
+% -  relative to parent
+______________________________
+
+em - it multiply it self with the size of its parent. like if parent have 30px of font-size and if we add font size 2em to its child it will multiply 30px with 2 and takes 60px of size.
+
+rem - it multiply it self from the upper most parent with is html tag. like if we set font-size to html is 10px and and we add 1rem size to element it will take size of 10px and if we add 2rem it will take size to 20px.
+
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+17. CSS CURSIOR
+17. CSS CURSIOR
+17. CSS CURSIOR
+
+It is used to define style or type of cursior 
+cursor: pointer; - it make cursior a hand like shape
+
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+18. CSS !IMPORTANT
+18. CSS !IMPORTANT
+18. CSS !IMPORTANT
+
+it is used to make css style most important if we add important in  css line it  will remove all priorty and make important line of code most important.
+cursor: pointer !important;
+
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+19. CSS BOX SHADOW 
+19. CSS BOX SHADOW 
+19. CSS BOX SHADOW 
+
+box shadow it is used add box shadow 
+.box{
+    box-shadow: horizontal vertical blur spread color offset;
+    box-shadow: 10px 10px 10px 4px black inset;
+}
+
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+20. CSS OPACITY 
+20. CSS OPACITY 
+20. CSS OPACITY 
+
+it is used to set OPACITY we can make element transparent by adding css OPACITY.
+opacity: 0.3;
+
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+21. CSS FILTER
+21. CSS FILTER
+21. CSS FILTER
+
+it is used to add filter on image by css it has different property.
+filter: blur(10px); - it is used to add blur filter on images.
+
+filter: brightness(0.9); - it is used to add brightness to image
+
+filter: contrast(10); - it is used to add contrast to images
+
+filter: grayscale(1%); - it is used to add grayscale scale black/white effect.
+
+filter: hue-rotate(1deg); - it is used to add hue-rotation color effect.
+
+filter: invert(1%); - it is used to invert the images.
+
+opacity: 1%; - it is used to add opacity to image.
+
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+22. CSS IMAGE SPRITE 
+22. CSS IMAGE SPRITE 
+22. CSS IMAGE SPRITE 
+
+
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+23. CSS GRADIATION 
+23. CSS GRADIATION 
+23. CSS GRADIATION 
+
+When we mix two color smoothly it is called gradient there are two type of gradient in css liear gradient and circular gradient.
+
+linear gradient - background-image: linear-gradient(to right,#FF9933,#FFFFFF,#138808);
+
+radial gradient - background-image: radial-gradient(circle, #138808 40%, #FFFFFF 40%, #FF993333 20%);
+
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+24. CSS OVERFLOW
+24. CSS OVERFLOW
+24. CSS OVERFLOW
+
+when the content exceed the height and it overflow the box thenwe use overflow property it to style extra content by default it is overflow visible.
+
+overflow: visible; by default it is visible.
+
+overflow: hidden; it is used to hind the over content.
+
+overflow: scroll; it is used to make the content scroll able if it overflow the box we can scroll the not visible content
+
+overflow-x: hidden; it is used to hide over of particular axis
+
+overflow-y: scroll; it is used to make content scroleable on a particular axis
+
+overflow: auto; it automaticlly make the scroll bar according to the content
+
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+25. CSS RESIAZABLE
+25. CSS RESIAZABLE
+25. CSS RESIAZABLE
+
+to make any div RESIAZABLE to add resize property. and to make any RESIAZABLE element not RESIAZABLE. it is necessary to make that div overflow hidden, auto or scrole than it will applay resize property
+
+resize: none; - it is used to make any resizeable div unresiazable.
+
+resize: both; - it
+
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+26. CSS LISTS 
+26. CSS LISTS 
+26. CSS LISTS 
+
+unordered list - 
+
+list-style-type: none; - it is used to hide the bulled points of unordered list.
+
+list-style-position: inside; it is use to set the position of list style insie or outsie. 
+
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+27. CSS TABLE
+27. CSS TABLE
+27. CSS TABLE
+
+border-collapse: collapse; it is to collapse a border of table. if we add table by default it take seprate border.
+
+border-spacing: 15px; it is used to add space betwwen to spans.
+
+empty-cells: hide; it is used to hide the empty cells. if there is no content i will hide the content.
+
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+28. CSS FUNCTIONS 
+28. CSS FUNCTIONS 
+28. CSS FUNCTIONS 
+
+CSS is not a programming language but it has a FUNCTIONS. 
+
+calc - it is used to add length of some thing by calculations.
+width: calc(100% - 100px);
+
+var - it is used to define variable like other programming language we can use different time for define a variable we use root. and to add on style we write these variable in var FUNCTIONS.
+
+:root{
+    --primary_color:rgb(67, 76, 76);
+    --btn_color:rgb(65, 65, 65);
+    --text_color:white;
+}
+
+background-color: var(--btn_color);
+
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+29. CSS SIZING  
+29. CSS SIZING  
+29. CSS SIZING  
+
+box SIZING property is use to set the behiavior of box model if we set it to content box (which is by default) it will increase the size of a box on adding margin, border, padding. it increase over all box size but if we applay box sizing border box it will stick to applay height and width and skrinks the content inside the box
+
+box-sizing: border-box;
+
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+30. CSS INITIAL VS INTARIT 
+30. CSS INITIAL VS INTARIT 
+30. CSS INITIAL VS INTARIT 
+
+initial is the by default property of which css have. and inharit is when it take property of its parent
+
+color: initial; it will take the by default color;
+
+color: inherit; it will take the color of its parent container.
+
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+31. CSS OBJECT FIX  
+31. CSS OBJECT FIX  
+31. CSS OBJECT FIX 
+
+OBJECT fit property is used to make image or vedio fit according to need.
+
+object-fit: contain; - contain show full image according to width of the container. it does not break the accept ratio of image but it leave the remaning area.
+
+object-fit: fill; - it fill the whole container but it break the accept ratio of the image.
+
+object-fit: cover; it cover the whole container and do not break the ratio but. it cuts the image in order to make image cover full container. but we can define which part of the image takes more priorty.
+
+object-position: top; it will show image from top.
+
+all property is same as background image property.
+
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+32. CSS PSEUDO-CLASSES  
+32. CSS PSEUDO-CLASSES  
+32. CSS PSEUDO-CLASSES  
+
+li:first-child{
+    color: red;
+}
+it is used to select first child of parent element
+
+
+li:last-child{
+    color: red;
+}
+it is used to select the last child of a parent element
+
+
+li:nth-child(3){
+    color: red;
+}
+it is used to select any element from child
+
+li:nth-child(odd){
+    color: red;
+}
+it is used to select odd number of child element (1,3,5..)
+
+li:nth-child(even){
+    color: red;
+}
+it is used to select even number of child element (2,4,6..)
+
+input:focus{
+    border: 3px solid red;
+    background-color: black;
+}
+it is used to add style when element stage if focused
+
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+33. CSS PSEUDO-ELEMENT
+33. CSS PSEUDO-ELEMENT
+33. CSS PSEUDO-ELEMENT
+
+p::first-line{
+    font-size: 35px;
+} 
+it is used to style spefiic line of a content.
+
+p::first-word{
+    font-size: 35px;
+} 
+it is used to style spefiic word of a content.
+
+
+h2::before{
+    content: "hi my name is yash";
+} 
+it is used to add content before an element
+
+
+h2::after{
+    content: "hi my name is yash";
+}
+it is used to add content after an element
+
+
+::selection{
+    color: red;
+    background-color: blue;
+} 
+it is used to add selection property
+
+
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+34. CSS DIAPLAY AND VISIBILITY
+34. CSS DIAPLAY AND VISIBILITY
+34. CSS DIAPLAY AND VISIBILITY
+
+dispalay has four manin value.
+
+block - display: block;
+1. it will start in new line
+2. it will take full width
+3. we can add width and height
+
+Inline - display: inline;
+1. it will not start in new line
+2. it will take width which is necessary
+3. we can not add width and height
+
+Inline-block - display: inline-block;
+1. it will not start in new line
+2. it will take width which is necessary
+3. we can add width and height
+
+none -  display: none;
+it will make div diapear and also leave its place.
+
+VISIBILITY - it is used make block hide or visible but it not leaave its place as dispalay:none;
+
+hidden - visibility: hidden;
+it will make div disapper but does not leave its place
+
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+35. CSS POSITION
+35. CSS POSITION
+35. CSS POSITION
+
+POSITION it is used to make element move able. from left, right, top, bottom by applaying dispalay property
+
+position property has four value.
+
+static -  position: static;
+it is by default all element has static. it is a normal flow
+
+relative - position: relative;
+in position relative box move around according to its actual place and it does not leave its space.
+
+absolute - position: absolute;
+it take position according to its position parent (the parent is position when its parent has position property other than static ) and it leaves it place if it is position relative and another element takes its place.
+
+fixed - position: fixed;
+it react according to viewport it take left right top bottom property according to html. and it get fixed when it's left right id defined
+
+sticky - position: sticky;
+it will move but if specified top or left value if will stick to that position and dont move after that
+
+and we can define from where and how much to move an element it can be dont by applay position property
+
+top - top: 15px;
+
+left - left: 0;
+
+bottom - bottom: 10px;
+
+right - right: 20px;
+
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+36. CSS LAYER AND Z-INDEX
+36. CSS LAYER AND Z-INDEX
+36. CSS LAYER AND Z-INDEX
+
+we can applay z-indent only when it is position element
+z-index:1;
+
+the element has height index value it will apperat at top
+
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+37. css FLOT AND CLEAR
+37. css FLOT AND CLEAR
+37. css FLOT AND CLEAR
+
+FLOT it is used to make an element flot we can flot it to right and left. if we applay flot perperty it leave its place 
+
+right - float: right;
+it is used to flot right
+
+lfet - float: lfet;
+it is used to flot lfet
+
+CLEAR it is used to make left right or both side of an element CLEAR if we applay CLEAR . the other element will not take place to its left or right or both. according ot which we applay
+
+
+clear: left; - it is used make other element not take place to its left
+
+clear: right; - it is used to make  other element not take place to its right side
+
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+38. CSS 2D TRANSFORMATION  
+38. CSS 2D TRANSFORMATION  
+38. CSS 2D TRANSFORMATION  
+
+
+In 2d transformation we can rotate scale squie an element by transform property
+
+translate - transform: translate(60px, 50px);
+it is used to make transform 2d from x and y axis here two parameter are distance from x and y axis.
+
+rotate - transform: rotate(30deg);
+it is used to rotate an element 360 degree it rotate by its center if we applay + value it rotate clockwise if - it will rotate anticlockwise
+
+
+scale - transform: scale(0.5, 0.5);
+it is used to transform its size first one is from for width (x axis) and second one is height( y axis) we can target x and y axis seprately.
+
+scaleX - transform: scaleX(2);
+it is used to increase or decrease length of x axis (width)
+
+scaleY - transform: scaleX(2);
+it is used to increase or decrease length of Y axis (height)
+
+skew - transform:skew(20deg, 10deg);
+it is used to skew (to make an element look tilt) first value is to skew in x axis and second one for y axis we can target than indivisualy
+
+skewX - transform:skewX(10deg);
+it is used to tilt an element in x axis.
+
+transform:skewY(10deg);
+it is used to tilt an element in Y axis.
+
+transform origin - transform-origin: 50% 100%;
+it is used to define a fix position from where to make an element rotate. the first value if x axis and second value y axis.
+
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+39. CSS 3D TRANSFORMATION  
+39. CSS 3D TRANSFORMATION  
+39. CSS 3D TRANSFORMATION  
+
+LEARN LATER
+
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+40. CSS TRANSITION  
+40. CSS TRANSITION  
+40. CSS TRANSITION  
+
+transition-property: all; 
+it is used to define in what we have to add transition. we can define specificaly what we want to transition but in all value of transition property it will change all.
+
+transition-duration: 2s;
+it is used to define the duration of transition in given time it will complete the transition.
+
+transition-delay: 2s;
+it is used to define delay of transition it will starts or end the transition in given time.
+
+transition-timing-function: ease;
+it is used to define type of transition.
+
+
+transition: property duration timting-function delay;
+is is a short hand ntion of transition.
+
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+41. CSS ANIMATION
+41. CSS ANIMATION
+41. CSS ANIMATION
+
+
+LEARN LETER
+
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+42. CSS PRINT STYLE IN CSS
+42. CSS PRINT STYLE IN CSS
+42. CSS PRINT STYLE IN CSS
+
+LEARN LETER
+
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+43. CSS RESPONSIVE WEB DESIGINE
+43. CSS RESPONSIVE WEB DESIGINE
+43. CSS RESPONSIVE WEB DESIGINE
+
+
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+44. CSS VIEWPORT META TAG
+44. CSS VIEWPORT META TAG
+44. CSS VIEWPORT META TAG
+
+
+
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+45. CSS MEDIA QUERIES
+45. CSS MEDIA QUERIES
+45. CSS MEDIA QUERIES
+
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+46. CSS ADVANCE SELECTOR 
+46. CSS ADVANCE SELECTOR 
+46. CSS ADVANCE SELECTOR 
+
+1. element selector
+h1{
+    color:red;
+}
+
+
+2. class selector
+.class_name{
+    color:red;
+}
+
+
+3. id selector
+#id_name{
+    color:red;
+}
+
+
+4. Pseudo class and pseudo element
+a:hover{
+    color:red;
+}
+
+p::first-line{
+    color:red;
+}
+
+
+5. Attribute selector 
+
+a[href="https://www.google.com]{
+    color:red;
+}
+
+6. universal selector
+
+*{
+    color:red;
+}
+
+
+7. Combinator selector
+
+i. Decendant combinator (child at any stage)
+
+.red-p span{
+    color:red;
+}
+
+
+ii. Child combinator (Direct child)
+
+.red-p>span{
+    color:red;
+}
+
+
+iii. Adjacent combinatory (right after sibling)
+
+.red-p + h1{
+    color:red;
+}
+
+iv. General sibling combinatory (all sibling)
+.red-p ~ h1{
+    color:green;
+}
+
+
+8. Add selector 
+general sibling combinatory (right after sibling)
+.red-p, h1{
+    color:green;
+}
+
+
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+47. CSS SPECIFICITY
+47. CSS SPECIFICITY
+47. CSS SPECIFICITY
+
+If one element is styled by more than one rule, which sytle will be applicable ?
+=> More spefiic rule will get more value.
+
+General rule
+
+1. ! important will overwrite evert thing.
+2. inline can override every thing except !important.
+3. External will work according to SPECIFICITY.
+
+Specificity rule - 
+
+(#) id selector has highest value.
+(*) universal selector has lowest value.
+
+Specificity rule Trick (point system) - 
+
+10000 point to !important
+1000  point to inline
+100   to id
+10    to class, attribute or pseudo class
+1     for element selector and pseudo element
+0     to universal selector
+
+NOTE - If same rule written two or more times in external sheet then last rule will applicable
+
+
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+48. CSS MULTIPLE COMOUMN
+48. CSS MULTIPLE COMOUMN
+48. CSS MULTIPLE COMOUMN
+
+column-count: 3;
+column-gap: 40px;
+column-rule-style:solid ;
+column-rule-width:1px ;
+column-rule-color: blue;
+column-rule: 1px solid pink;
+
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+49. CSS FLEX
+49. CSS FLEX
+49. CSS FLEX
+
+display: flex;
+it is used make container a flex box container its child element will behaive as a flexible children.
+
+flex-direction: column;
+it is used to define direction of flex. if it is color it will dispalay its child one by one verticaly
+
+flex-direction: row;
+in row it will display its child in row order one by one in horizontal direction;
+
+flex-direction: row-reverse; 
+in row reverse it will display its child in row but it will reverse it. the first child will start from right side
+
+flex-direction: column-reverse;
+in coloumn reverse it will reverse the children verticaly
+
