@@ -33,7 +33,7 @@ here h1 is selector curly brackets are declaration block and color is property a
 
 --------------------------------------------------------
 
-QUE 4 :- Three Waus to write css?
+QUE 4 :- Three Ways to write css?
 . Inline CSS -> Style applied directly to on html element using the style attribute.
 <h1 style="color: blue;" >THIS IS HEADING</h1>.
 
@@ -511,3 +511,195 @@ it is used to add content after an element
     background-color: blue;
 } 
 it is used to add selection property
+
+--------------------------------------------------------
+
+QUE 6 :- What is INITIAL and INTARIT ?
+
+initial is the by default property of which css have. and inharit is when it take property of its parent
+color: initial; it will take the by default color;
+color: inherit; it will take the color of its parent container.
+
+--------------------------------------------------------
+
+QUE 7 :- What is colors in css ?
+
+colors are used to add colors on element. color is added by color property
+ex - color: red;
+in css colors can be specified using color name, rgb, rgba, hex code, hsl
+
+1. color name => simple colors modern browsers suport 140 named colors.
+ex- red, blue, etc.
+
+2. rgb => rgb(red,green,blue). we have to give red green and blue its points betwwen 0 to 255. 
+
+The rgb() function define colors using the Red-green-blue (RGB) model. An RGB color value is specified with: rgb(red, green, blue). Each parameter defines the intensity of that color and can be an integer between 0 and 255 or a percentage value (from 0% to 100%).
+
+rgb(0,0,0) => black
+rgb(255,255,255) => white
+rgb(255,0,0) => red
+rgb(0,255,0) => green
+rgb(0,0,255) => blue
+
+3. rgba =>  rgba(red,green,blue,alpha)
+alpha parameter is a number between 0-1, 0.0(fully transparent) and 1.0 (not transparent at all)
+ex- rgba(255,255,255,0.7)
+
+4.hex => #rrggbb rr(red), gg(green), bb(blue) hexadecimal value between 00 and ff (same as deficmal 0-255)
+red:#ff0000;
+red:#000000;
+red:#ffffff;
+
+5.hsl => hsl(hue,saturation,lightness)
+ex- RED:hsl(0,100%,50%)
+
+HUE is a degree on the color wheel from 0 to 360. 0is red, 120 is green, and 240 is blue.
+SATURARION is percentage value, 0% means a shade of gray, and 100% is the full color. 
+LIGHTNESS is also a percentage, 0% is black, 50% is neither light or dark 100% is white.
+
+6.hsla => hsla(hue, saturation, lightness, alpha)
+. alph parameter is a number between 0.0 (fully transparent) and 1.0 (not transparent al all)
+ex- ex- RED:hsla(0,100%,50%,0.5)
+
+HUE - A pure color
+TINT - A pure color with just white added
+SHADE - A pure color with just black added
+Tone - A pure color with just grey added
+
+--------------------------------------------------------
+
+QUE 8 :- What is background and its property in css?
+
+BACKGROUND we have different property for background it is used to add style in background of an element.
+
+1. background color => it is used to add color to background of an element.
+ex body{
+    background-color: rgba(0, 0, 255, 0.61);
+}
+
+-------------------
+
+2. background image => it is used to add background image to the background of an element.
+ex- body {
+    background-image: url(/images/mother\ bord.jpg);
+}
+
+-------------------
+
+3. background repeat => it is used to style of repetation of image. background repeat has many values.
+
+-------------------
+
+background-repeat: no-repeat; (if we dont want to repeat).
+repeat-x = to repeat in x axis only.
+repeat-y = to repeat in y axis only.
+
+-------------------
+
+4. background size => it is used to add background size. it has different values.
+auto => it automaticlly takes the size.
+contain => it take as per the content.
+cover => it take the whole window size.
+
+we can also add background size in % and px
+
+-------------------
+
+5. background position => it is used to add position of a background background position property has different values.
+top,center,bottom,rght,left.etc.
+we can also add position in px and percentage.
+
+-------------------
+
+6. background attactment => it is used to add attactment to the background. it has different values.
+scroll =. by default it has scroll it means it scrole with the content.
+fixed => it is used to set background attactment fixed if we use fixed it will dont move.
+
+-------------------
+
+7. multiple images -> it is used to add multiple images on background
+background: url(first-image-url), url(seocnd-image-url);
+(or bhe saare property do baar likhne honge dono image ko style karne ke liye) 
+
+-------------------
+
+8. background-blend-mode -> The background-blend-mode property defines the blending mode of each background layer (color and/or image).
+
+normal     - This is default. Sets the blending mode to normal	
+multiply   - Sets the blending mode to multiply	
+screen     - Sets the blending mode to screen	
+overlay    - Sets the blending mode to overlay	
+darken     - Sets the blending mode to darken	
+lighten    - Sets the blending mode to lighten	
+color      - dodge	Sets the blending mode to color-dodge	
+saturation - Sets the blending mode to saturation	
+color      - Sets the blending mode to color	
+luminosity - Sets the blending mode to luminosity
+
+-------------------
+
+9. background-origin	Specifies where the background image(s) is/are positioned.
+
+padding-box	Default value. The background image starts from the upper left corner of the padding edge	
+background-origin: padding-box;
+
+border-box	The background image starts from the upper left corner of the border	
+background-origin: border-box;
+
+content-box	The background image starts from the upper left corner of the content
+background-origin: content-box;
+
+-------------------
+
+10. background-clip	Specifies the painting area of the background
+
+border-box	Default value. The background extends behind the border	
+background-clip: border-box;
+
+padding-box	The background extends to the inside edge of the border	
+background-clip: padding-box;
+
+content-box	The background extends to the edge of the content box
+background-clip: content-box;
+
+-------------------
+
+11. background => it is a short hand property which is used to different styles of background in once.
+background: color - image - repeat - attactment - position;
+background: black url(/images/mother\ bord.jpg) no-repeat fixed center;
+color 
+image
+repeat
+attactment
+position
+
+--------------------------------------------------------
+
+QUE 9 :- What is a CSS Unit?
+
+A CSS unit determines the size of a property you're setting for an element or its content. For example, if you wanted to set the property margin of a paragraph, you would give it a specific value. This value includes the CSS unit. Let's look at a small example: p { margin: 20px; } 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+--------------------------------------------------------
+
+QUE 6 

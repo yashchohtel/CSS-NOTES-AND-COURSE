@@ -216,7 +216,7 @@ ex- ex- RED:hsla(0,100%,50%,0.5)
 7. CSS BACKGROUND 
 7. CSS BACKGROUND 
 
-BACKGROUND we have different property for background it is used to add style i n background of an element.
+BACKGROUND we have different property for background it is used to add style in background of an element.
 ______________________________
 background color => it is used to add color to background of an element.
 ex body{
