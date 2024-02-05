@@ -1,0 +1,488 @@
+/* 
+
+What is css selectors?
+CSS selectors are used to "find" (or select) the HTML elements you want to style.
+
+---------------------------------------------------------------------------------
+
+[I. SIMPLE SELECTOR]
+
+1. Universal selector -> The universal selector (*) selects all HTML elements on the page.
+
+Example
+The CSS rule below will affect every HTML element on the page: 
+
+* {
+  text-align: center;
+  color: blue;
+}
+
+2. CSS element Selector -> The element selector selects HTML elements based on the element name.
+Example
+Here, all <p> elements on the page will be center-aligned, with a red text color: 
+
+p {
+  text-align: center;
+  color: red;
+}
+
+3. CSS id Selector -> The id selector uses the id attribute of an HTML element to select a specific element.
+The id of an element is unique within a page, so the id selector is used to select one unique element!
+To select an element with a specific id, write a hash (#) character, followed by the id of the element.
+
+Example
+The CSS rule below will be applied to the HTML element with id="para1":
+Note: An id name cannot start with a number!
+
+#para1 {
+  text-align: center;
+  color: red;
+}
+
+
+4. CSS class Selector -> The class selector selects HTML elements with a specific class attribute.
+To select elements with a specific class, write a period (.) character, followed by the class name.
+different element can have same class selector and one element can have more than one class.
+
+Example
+In this example all HTML elements with class="center" will be red and center-aligned: 
+
+.center {
+  text-align: center;
+  color: red;
+}
+
+You can also specify that only specific HTML elements should be affected by a class.
+
+Example
+In this example only <p> elements with class="center" will be red and center-aligned: 
+
+p.center {
+    text-align: center;
+    color: red;
+}
+
+HTML elements can also refer to more than one class.
+
+Example
+In this example the <p> element will be styled according to class="center" and to class="large": 
+
+<p class="center large">This paragraph refers to two classes.</p>
+
+---------------------------------------------------------------------------------
+
+[II. COMBINATORY SELECTORS]
+
+1. Descendant Selector -> The descendant selector matches all elements that are descendants of a specified element.
+
+The following example selects all <p> elements inside <div> elements: 
+
+Example
+div p {
+  background-color: yellow;
+}
+
+2. Child Selector (>) -> The child selector selects all elements that are the children of a specified element.
+
+The following example selects all <p> elements that are children of a <div> element:
+
+Example
+div > p {
+  background-color: yellow;
+}
+
+3. Adjacent Sibling Selector (+) -> The adjacent sibling selector is used to select an element that is directly after another specific element.
+
+Sibling elements must have the same parent element, and "adjacent" means "immediately following".
+
+The following example selects the first <p> element that are placed immediately after <div> elements:
+
+Example
+div + p {
+  background-color: yellow;
+}
+
+4. General Sibling Selector (~) -> The general sibling selector selects all elements that are next siblings of a specified element.
+
+The following example selects all <p> elements that are next siblings of <div> elements: 
+
+Example
+div ~ p {
+  background-color: yellow;
+}
+
+---------------------------------------------------------------------------------
+
+[III. ATTRIBUTE SELECTOR]
+
+CSS Attribute selector ->The [attribute] selector is used to select elements with a specified attribute or its value.
+
+1. CSS [attribute] Selector -> it is used to select the element which has the given attribute
+The [attribute] selector is used to select elements with a specified attribute.
+
+The following example selects all <a> elements with a target attribute:
+
+Example
+a[target] {
+  background-color: yellow;
+}
+
+2. CSS [attribute="value"] Selector -> The [attribute="value"] selector is used to select elements with a specified attribute and value.
+
+The following example selects all <a> elements with a target="_blank" attribute:
+
+Example
+a[target="_blank"] {
+  background-color: yellow;
+}
+
+3. CSS [attribute~="value"] Selector -> The [attribute~="value"] selector is used to select elements with an attribute value containing a specified word.
+
+The following example selects all elements with a title attribute that contains a space-separated list of words, one of which is "flower":
+
+Example
+[title~="flower"] {
+  border: 5px solid yellow;
+}
+
+The example above will match elements with title="flower", title="summer flower", and title="flower new", but not title="my-flower" or title="flowers".
+
+4. CSS [attribute^="value"] Selector -> The [attribute^="value"] selector is used to select elements with the specified attribute, whose value starts with the specified value.
+
+The following example selects all elements with a class attribute value that starts with "top":
+
+Note: The value does not have to be a whole word!
+
+Example
+[class^="top"] {
+  background: yellow;
+}
+
+5. CSS [attribute|="value"] Selector -> The [attribute|="value"] selector is used to select elements with the specified attribute, whose value can be exactly the specified value, or the specified value followed by a hyphen (-).
+
+Note: The value has to be a whole word, either alone, like class="top", or followed by a hyphen( - ), like class="top-text".
+
+Example
+[class|="top"] {
+  background: yellow;
+}
+
+6. CSS [attribute$="value"] Selector -> The [attribute$="value"] selector is used to select elements whose attribute value ends with a specified value.
+
+The following example selects all elements with a class attribute value that ends with "test":
+
+Note: The value does not have to be a whole word!  
+
+Example
+[class$="test"] {
+  background: yellow;
+}
+
+7. CSS [attribute*="value"] Selector -> The [attribute*="value"] selector is used to select elements whose attribute value contains a specified value.
+
+The following example selects all elements with a class attribute value that contains "te":
+
+Note: The value does not have to be a whole word!  
+
+Example
+[class*="te"] {
+  background: yellow;
+}
+
+---------------------------------------------------------------------------------
+
+[IV. PSEUDO-CLASSES]
+
+CSS Pseudo-classes -> A pseudo-class is used to define a special state of an element.
+For example, it can be used to:
+Style an element when a user mouses over it
+Style visited and unvisited links differently
+Style an element when it gets focus
+
+Syntax
+The syntax of pseudo-classes:
+
+selector:pseudo-class {
+  property: value;
+}
+
+An example of using the :hover pseudo-class on a <div> element:
+
+Example
+div:hover {
+  background-color: blue;
+}
+
+-------------
+
+01. :first-child -> used to select the first child of any parent
+li:first-child {
+    border: 1px solid black;
+}
+
+
+02. :last-child -> used to select the last child of any parent
+li:last-child {
+    border: 1px solid black;
+}
+
+03. :nth-child() -> used to select the nth number of child and we can use calculation to select like given bellow
+li:nth-child(3){
+    border: 1px solid black;
+}
+
+it work as a calculation 
+li:nth-child(2n+1){
+    background-color: blue;
+}
+
+04. :nth-last-child() -> it work similar as nth-child but starts from last
+li:nth-last-child(2){
+    border: 1px solid black;
+}
+
+05. :nth-of-type() -> it select the element of given value if its has direct parent or not
+li:nth-of-type(1) {
+    background-color: blue;
+}
+
+06. :nth-last-of-type() -> it select the element of given value if its has direct parent or not it start selection from last
+li:nth-last-of-type(1) {
+    background-color: blue;
+}
+
+07. :only-child -> it select the child of an element which has only one child if parent has two child it will not work
+li:only-child{
+    background-color: blue;
+}
+
+08. :only-of-type -> it select the child of parent elemnt which have only all different type of element child or only child. if there is similar child in parent it will not work
+b:only-of-type {
+    background-color: blue;
+}
+
+09. :first-of-type -> it will select only first child of an parent element
+or it can also select if it has parent or not.
+p:first-of-type {
+    background-color: blue;
+}
+
+10. :last-of-type -> it will select only last child of an parent element
+or it can also select if it has parent or not.
+p:last-of-type {
+    background-color: blue;
+}
+
+11. :empty -> it will select the empty element. if element has white space it will not work
+div:empty {
+    background-color: rgb(111, 255, 0);
+}
+
+
+12. :not() -> it will select all the element other than what we write in its parameter
+p:not(.test) {
+    background-color: rgb(255, 39, 39);
+}
+
+13. :lang() -> it select the text containing element by the different attribute of language.
+p:lang(en){
+    color: blue;
+}
+
+14. :link -> it is only used to select the a tag we can also just simply select a tag style it.
+ul a:link{
+    background-color: blue;
+}
+
+15. :hover -> it is used to style the element when the cursior of mouse over an element. 
+ul a:hover{
+    background-color: blue;
+}
+
+16. :visited -> it is only used to style link tag when once it visited
+ul a:visited{
+    background-color: blue;
+}
+
+17. :active -> it is used to style element when the element it clicked or mouse left button is pressed over an element.
+p:active{
+    background-color: blue;
+}
+
+18. :target -> it select the targeted element 
+p:target{
+    background-color: blue;
+}
+
+===== PSEUDO CLASSES USED TO STYLE FORMS ======
+19. :focus -> it is used to style an input tag when the input is focoused to clicked to input data.
+input:focus{
+    background-color: green;
+}
+
+20. :checked -> it is used to style checkbox and radio when somethink is ckecked 
+input[type='checkbox']:checked{
+   box-shadow: 0 0 0 3px red;
+}
+
+21. :disabled -> it is used to select the input box which is disabled
+input[type='text']:disabled{
+   box-shadow: 0 0 0 3px red;
+}
+
+22. :enabled -> it is used to select the input which is enabled
+input[type='text']:enabled{
+   box-shadow: 0 0 0 3px red;
+}
+
+23. :required -> it is used to select the input which has attribute required
+   input[type='text']:required{
+   box-shadow: 0 0 0 3px red;
+}
+
+24. :optional -> it is used to select the input which does not have required attribute or it is optional.
+input[type='text']:optional{
+   box-shadow: 0 0 0 3px red;
+}
+
+25. :in-range -> it only work with number input tag it is use to select when input is in range.
+input:in-range{
+    background-color: blue;
+}
+
+26. :out-of-range -> it only work with number input tag it is use to select when input value if out of range
+input:out-of-range {
+    background-color: blue;
+}
+
+27. :read-only -> it is used to select the input which has the attribute readonly
+input:read-only {
+    background-color: blue;
+}
+
+28. :read-write -> it is used to select the input which does not have attribute readonly which is by default read-write
+input:read-write {
+    background-color: blue;
+}
+
+29. :valid -> it is used to select and style an input tag when input data is valid
+input[type='email']:valid {
+    background-color: blue;
+}
+
+30. :valid -> it is used to select and style an input tag when input data is invalid
+input[type='email']:invalid {
+    background-color: blue;
+}
+
+31. :default -> it is only used with checkbox radio or option input tag to style its default inputs value
+input:default {
+    box-shadow: 0 0 0 3px red;
+}
+
+32. :root -> it is used to create variables in css file
+:root{
+    --color-blue:blue;
+}
+
+32. :is() -> it is used to reduce the line of code to select different element of a same parent
+
+-> .test1 :is(h1, p, h3){
+    background-color: blue;
+}
+
+-> :is(.test1, .test2) h1, h3{
+    color: blue;
+}
+
+-> :is(.test1, .test2) :is(h1, h3){
+    color: blue;
+    border: 1px solid black;
+}
+
+-> :is(.test1, .test2) :is(h1, h3):hover{
+    color: blue;
+    border: 1px solid black;
+}
+
+33. :placeholder-shown -> it only work with input and textarea it is used to style the input field and textarea when placeholder is shown.
+input:placeholder-shown{
+    border: 3px solid red;
+}
+
+34. :focous-within -> it is used to select the body of any input tag we focous it applay the givven style to the parent
+form:focus-within{
+    background-color: hotpink;
+}
+
+35. :fullscreen -> it is used to style the element when it fullscreen by the javascript
+#box:fullscreen{
+    background-color: hotpink;
+    font-size: 30px;
+}
+
+36. :has() -> it is used to select the parent by providing child in parameter it.
+-> div:has(h4){
+    background-color: hotpink;
+}
+
+---------------------------------------------------------------------------------
+
+[IV. PSEUDO-ELEMENT]
+
+p::first-line{
+    font-size: 35px;
+} 
+it is used to style spefiic line of a content.
+
+p::first-word{
+    font-size: 35px;
+} 
+it is used to style spefiic word of a content.
+
+
+h2::before{
+    content: "hi my name is yash";
+} 
+it is used to add content before an element
+
+
+h2::after{
+    content: "hi my name is yash";
+}
+it is used to add content after an element
+
+
+::selection{
+    color: red;
+    background-color: blue;
+} 
+it is used to add selection property
+
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

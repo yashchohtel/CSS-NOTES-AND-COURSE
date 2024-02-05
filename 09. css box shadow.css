@@ -1,0 +1,27 @@
+/* 
+
+CSS BOX SHADOW 
+
+box shadow it is used add box shadow 
+.box{
+    box-shadow: horizontal vertical blur spread color offset;
+    box-shadow: 10px 10px 10px 4px black inset;
+}
+
+normal box shadow  
+box-shadow: 10px 10px 10px 3px red;
+box-shadow: x-axis y-axis blur blur-radius color;
+
+single box shadow width blur radius
+box-shadow: 10px 10px 10px 3px red;
+box-shadow: x-axis y-axis blur blur-radius color;
+
+box shadow with inset (inside box shadow)
+box-shadow: 10px 10px 10px 3px red inset;
+box-shadow: x-axis y-axis blur blur-radius color inset;
+
+double box shadow
+box-shadow: 10px 10px 10px 3px red,  -10px -10px 10px 3px blue;
+box-shadow: x-axis y-axis blur blur-radius color;
+
+*/

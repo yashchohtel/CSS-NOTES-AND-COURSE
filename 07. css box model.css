@@ -1,0 +1,50 @@
+/* 
+
+HEIGHT AND WIDTH -> Height and width are use to add Height and width of an element. we can add Height and width by Height and width property. we can add Height and width in px and percentage. if we add pixel it will take as per pixel and if in percentage it will take according to the parent container if 50% it will width 50% of the parent container.
+
+#box{
+    width: 50%;
+    height:40%;
+}
+
+we can also add maximum and minimum to height and width
+#box{
+    background-color: green;
+    width: 50%;
+    height:50%;
+    max-width: 600px;
+    max-height: 800px;
+    min-width: 400px;
+    min-height: 300px;
+} 
+
+CSS PADDING -> PADDING is the space between border and content. we can also add padding in indivisual sides of element.
+
+.box{
+    border: 1px solid black;
+    padding: 40px;
+}
+
+CSS MARGIN -> MARGIN is the psace between border and orther outer element. we can also add margin in indivisual sides of element.
+
+.box{
+    border: 1px solid black;
+    margin: 30px;
+}
+
+CSS BOX MODEL
+
+When we set the width and height property of an element width css, we just set the width and height of the of the content area. to calculate the full size of an element, you must add padding, border and margins.
+
+Total element width = width + left-padding + right-padding + left-border + right-border + left-margin + right-margin
+Total element height = height + top-padding + bottom-padding + top-border + bottom-border + top-margin + bottom-margin
+
+
+CSS BOX SIZING -> CSS SIZING  
+
+box SIZING property is use to set the behiavior of box model if we set it to content box (which is by default) it will increase the size of a box on adding margin, border, padding. it increase over all box size but if we applay box sizing border box it will stick to applay height and width and skrinks the content inside the box
+
+box-sizing: border-box;
+
+
+*/

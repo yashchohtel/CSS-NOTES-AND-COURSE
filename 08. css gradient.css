@@ -1,0 +1,43 @@
+/* 
+
+The linear-gradient() css function creates an image consisting of a progressive transition between two or more colors along a straight line.
+
+CSS GRADIATION 
+
+When we mix two color smoothly it is called gradient there are two type of gradient in css liear gradient and circular gradient.
+
+linear gradient - background-image: linear-gradient(to right,#FF9933,#FFFFFF,#138808);
+
+radial gradient - background-image: radial-gradient(circle, #138808 40%, #FFFFFF 40%, #FF993333 20%);
+
+
+default and simple linear gradient 
+background: linear-gradient(pink,blue);
+background: linear-gradient(color-1, color-2);
+
+three color linear gradient 
+background: linear-gradient(pink,blue,yellow);
+background: linear-gradient(color-1, color-2, color-3);
+
+defining direction in linear gradient 
+background: linear-gradient(to left bottom, pink,blue,yellow);
+background: linear-gradient(direction, color-1, color-2, color-3);
+
+rotating by degree in linear gradient 
+background: linear-gradient(120deg, pink,blue,yellow);
+background: linear-gradient(rotation value in degree, color-1, color-2, color-3);
+
+default and simple radial gradient 
+background: radial-gradient(pink,blue,yellow);
+background: radial-gradient(color-1, color-2);
+
+defining shape of a radial gradient 
+background: radial-gradient(circle,pink,blue,yellow);
+background: radial-gradient(shape,color-1, color-2);
+
+defining color requirment in radial gradient 
+background: radial-gradient(circle,pink 30%,blue 20%,yellow 20%);
+background: radial-gradient(shape,color-1, color-2);
+
+
+*/

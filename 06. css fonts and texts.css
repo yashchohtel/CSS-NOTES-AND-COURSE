@@ -1,0 +1,67 @@
+/* 
+
+FONTS - the type of text is fonts.
+
+font size - to set size of the text we use font size.
+font-size: 30px;
+______________________________
+font weight - it is used to add font weight. we can applay bold bolder and in point 100 - 900 100 is thiner and 900 us bolder (font weight is vary in there style)
+font-weight: bold;
+______________________________
+font-style - it is used to set font style to a text
+font-style: italic;
+______________________________
+font variant - it is used to define variation of text
+font-variant: small-caps;
+______________________________
+font family - it is used to add font family means style of a text .
+font-family: sans-serif;
+
+-----------------------------
+
+CSS TEXTS
+
+operations width text.
+ 
+color - to add color to text.
+color: red;
+______________________________
+text aling - to add alingment in text it has four main property right left and center and juftify. by default it is left
+text-align: center;
+______________________________
+direction - to define direction of text by default it is left ot right. and we can make it right to left.
+direction: rtl;
+______________________________
+text decoration - it is used to decorate the text by default it is none. we can add underline ,overline, line through line property by text decoration property.
+text-decoration: underline;
+______________________________
+text transform - it is used to convert the text to lower case upper case and capitalize.
+text-transform: lowercase;
+______________________________
+line height - to add space between two line of text. we applay line height.
+line-height:30px;
+______________________________
+latter spaceing - to add space between to letters of a word.
+letter-spacing: 1px;
+______________________________
+word spaceing - to add space between 2 words.
+word-spaceing: 2px;
+______________________________
+text indextion - to add indextion to text. it will add padding-left on the first line of the text.
+text-indent: 30px;
+______________________________
+white space pre - it is used to display text as it is. with br tag. we can add space and line brake on html and if we applay which space pre it will display text as it is.
+white-space: pre;
+______________________________
+font size - it is used to define font size of a text.
+font-size: 30px;
+______________________________
+text shadow - it is used to add shadow to text.
+text-shadow: horizontal vertical blur color;
+text-shadow: 5px 10px 10px coral;
+______________________________
+writeing mode - it is used to define write mode want to write horizontal or vertical. by default it is horizontal left to right.
+writing-mode: vertical-lr;
+
+*/
+

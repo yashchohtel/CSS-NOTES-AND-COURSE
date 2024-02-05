@@ -1,0 +1,24 @@
+/* 
+
+CSS FILTER
+
+it is used to add filter on image by css it has different property.
+filter: blur(10px); - it is used to add blur filter on images.
+
+filter: brightness(0.9); - it is used to add brightness to image
+
+filter: contrast(10); - it is used to add contrast to images
+
+filter: grayscale(1%); - it is used to add grayscale scale black/white effect.
+
+filter: hue-rotate(1deg); - it is used to add hue-rotation color effect.
+
+filter: invert(1%); - it is used to invert the images.
+
+ filter: drop-shadow(0px 0px 0px yellow); i is used to create shadow on a png image.
+
+opacity: 1%; - it is used to add opacity to image.
+
+
+*/
+

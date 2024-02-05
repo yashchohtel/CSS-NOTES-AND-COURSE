@@ -1,0 +1,23 @@
+/* 
+
+CSS LISTS AND TABLE
+
+unordered list - 
+
+list-style-type: none; - it is used to hide the bulled points of unordered list.
+
+list-style-position: inside; it is use to set the position of list style insie or outsie. 
+
+
+CSS TABLE
+
+border-collapse: collapse; it is to collapse a border of table. if we add table by default it take seprate border.
+
+border-spacing: 15px; it is used to add space betwwen to spans.
+
+empty-cells: hide; it is used to hide the empty cells. if there is no content i will hide the content.
+
+
+*/
+
+
