@@ -1089,7 +1089,7 @@ fixed - position: fixed;
 it react according to viewport it take left right top bottom property according to html. and it get fixed when it's left right id defined
 
 sticky - position: sticky;
-it will move but if specified top or left value if will stick to that position and dont move after that
+it will move but if specified top or left value it will stick to that position and dont move after that
 
 and we can define from where and how much to move an element it can be dont by applay position property
 

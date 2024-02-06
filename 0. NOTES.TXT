@@ -890,6 +890,44 @@ filter: invert(1%); - it is used to invert the images.
 
 opacity: 1%; - it is used to add opacity to image.
 
+--------------------------------------------------------
+
+QUE 14 :- What is display and visibility in css?
+Block and inlive level element :- A block-level element always starts on a new line and takes up the full width available. An inline element does not start on a new line and it only takes up as much width as necessary.  
+
+The display CSS property sets whether an element is treated as a block or inline box and the layout used for its children, such as flow layout, grid or flex. Formally, the display property sets an element's inner and outer display types.
+
+dispalay has four manin value.
+
+block - display: block;
+1. it will start in new line
+2. it will take full width
+3. we can add width and height
+
+Inline - display: inline;
+1. it will not start in new line
+2. it will take width which is necessary
+3. we can not add width and height
+
+Inline-block - display: inline-block;
+1. it will not start in new line
+2. it will take width which is necessary
+3. we can add width and height
+
+none -  display: none;
+it will make div diapear and also leave its place.
+
+VISIBILITY :- The visibility CSS property shows or hides an element without changing the layout of a document. 
+
+VISIBILITY - it is used make element hide or visible but it not leaave its place as dispalay:none;
+
+hidden - visibility: hidden;
+it will make div disapper but does not leave its place
+
+
+--------------------------------------------------------
+
+QUE 14 :- What is position in css? 
 
 
 

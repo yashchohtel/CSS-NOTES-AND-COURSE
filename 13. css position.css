@@ -1,0 +1,54 @@
+/* 
+
+The position Property :- The position property specifies the type of positioning method used for an element.
+
+The position property in css is used to control the positioning of elements withi a web page. It defines how an element should be placed relative to its normal position in the document flow or relative to its parent or containing elements.
+
+
+
+There are five different position values:
+
+static
+relative
+fixed
+absolute
+sticky
+
+static -  position: static;
+it is by default all element has static. it is a normal flow
+
+relative - position: relative;
+in position relative box move around according to its actual place and it does not leave its space.
+
+absolute - position: absolute;
+it take position according to its position parent (the parent is positioned, when its parent has position property other than static ) and it leaves it place if it is position relative and another element takes its place.
+
+fixed - position: fixed;
+it react according to viewport it take left right top bottom property according to html. and it get fixed when it's left right id defined
+Elements with position: fixed; are positioned relaive tothe viewpot , so they remain in the same position even when the page is scrolld, you can use top. right, bottom, and left properties to specify the exact positon.
+
+sticky - position: sticky;
+it will move but if specified top or left value it will stick to that position and dont move after that
+Elements with position: sticky; ar initially positioned according to the normal flow. but they become "sticky" and stay within the viweport once they reach a specified scroll position.
+
+and we can define from where and how much to move an element it can be dont by applay position property
+
+top - top: 15px;
+
+left - left: 0;
+
+bottom - bottom: 10px;
+
+right - right: 20px;
+
+LAYER AND Z-INDEX :- we can applay z-indenx only when it is position element
+
+z-intex property in css is used to control the stacking otder of elements on a web page. it determines which should appeat in frnt of behid other behind other elements when they overlap in the same page. elements with higher z-index values are placed in front of elements with lower z-index values.
+
+z-index:1;
+
+the element has highest index value it will apperat at top
+
+
+*/
+
