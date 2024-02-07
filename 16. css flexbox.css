@@ -1,0 +1,222 @@
+/* 
+
+CONTAINER PROPERTY ---
+
+New module in CSS3 to easy align elements in different directions and orders, Flexbox is to give container the  ability to expand and shrink elements to best use all the available space. Css flexbox layout replaces float layout. New way to build one-dimensional layouts.
+
+1. flexbox -> it is used to make a container flex box and we can move container items horizontaly and vertically.
+=> display: flex;
+
+2. flex direction -> it is used to define the direction of element inside the flex container either coloumn or row.
+
+a. flex-direction-row -> it is used to flote element of a container in a row (hoizontaly) left to right which is by defaylt. 
+flex-direction: row;
+
+b. flex-direction-row-reverse -> in row reverse it will start all the content of a continer float from the left to right in reverse order.
+flex-direction: row-reverse;
+
+c. flex direction coloumn -> it is used to define flex direction coloum flex container items flow from top to bottom vertically.
+=> flex-direction: column;
+
+d. flex direction coloumn reverse -> it is used to reverse the coloumn last element start from the first and goes to end first element will place to lsat and it start from bottom to top.
+=> flex-direction: column-reverse;
+
+
+3. flex-wrap -> in flex wrap it will try to wrap all the element inside the given width of a container without adjusting the origina width of an element inside the container
+
+flex-wrap: wrap;
+flex-wrap: wrap-reverse; -> it will wrap last elemnt first and then so on.
+flex-wrap:no-wrap; -> it will not wrap the element which is by default.
+flex-flow:direction,flex-wrap;
+
+4. justifiy content -> it is used to align items horizontally in different style.  
+
+.. justify-content: center; 
+.. justify-content: space-between; 
+.. justify-content: space-around;
+.. justify-content: space-evenly;
+.. justify-content: end;
+.. justify-content: flex-end;
+.. justify-content: start;
+.. justify-content: flex-start;
+
+5. align item -> it is used to align items vertically in different style.  
+
+.. align-items: center;
+.. align-items: baseline;
+.. align-items: end;
+.. align-items: flex-end;
+.. align-items: self-end;
+.. align-items: start;
+.. align-items: flex-start;
+.. align-items: self-start;
+
+6. align-content -> it is used to set vertical alighment it work when it has 2 or more rows.
+
+.. align-content: flex-start;
+.. align-content: flex-end
+.. align-content: center;
+.. align-content: stretch;
+.. align-content: space-around;
+.. align-content: space-between;
+.. align-content: space-evenly;
+
+
+ITEMS PROPERTY ---
+
+1. order -> it is used to define the order of the item of flex container we define the order in number which item contain largest it comes in last.
+order:1;
+
+2. flex-grow -> it is used to grow the item of the continer.
+flex-grow:2;
+
+3. flex-shrink -> it is used to shrink the flex items by default it has 1 but if value more then 1 it will shrink more then other element larger number shrink more
+flex-shrink:1;
+
+4. aligh-self -> it is used to aligh the seprate items of the flex container like aligh-items it is same like aligh-item property but it works in individual items 
+.. align-self: center;
+.. align-self: baseline;
+.. align-self: flex-end;
+.. align-self: self-end;
+.. align-self: start;
+.. align-self: flex-start;
+.. align-self: self-start;
+.. align-self: end;
+.. align-self: auto;
+
+5. flex-basics -> it is used to handle the width of flex items of the flex container.
+
+6. flex -> it short hand of flex shrink, flex grow, flex basics;
+
+flex: flex-grow, flex-shring, flex-basis:
+
+*/
+
+
+.parent{
+    margin: 0 auto;
+    width: 800px;
+    height: 500px;
+    border: 1px solid black;
+    background-color: rebeccapurple;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.child{
+    width: 100px;
+    height: 100px;
+    /* border: 1px solid black; */
+    text-align: center;
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+}
+
+.child:nth-child(1){
+    background-color: pink;
+}
+.child:nth-child(2){
+    background-color: rgb(56, 48, 49);
+}
+.child:nth-child(3){
+    background-color: rgb(136, 151, 232);
+}
+.child:nth-child(4){
+    background-color: rgb(85, 207, 52);
+}
+.child:nth-child(5){
+    background-color: rgb(232, 103, 125);
+}
+.child:nth-child(6){
+    background-color: rgb(82, 209, 43);
+}
+.child:nth-child(7){
+    background-color: rgb(45, 138, 17);
+}
+
+
+.line{
+    height: 100%;
+    width: 1px;
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+}
+
+.line-h{
+    width: 100%;
+    height: 1px;
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+}
+
+.line-1{
+    left: 0;
+    top: 0px;
+}
+
+.line-2{
+    left: 100px;
+    top: 0px;
+}
+
+
+.line-3{
+    left: 200px;
+    top: 0px;
+}
+
+.line-4{
+    left: 300px;
+    top: 0px;
+}
+
+.line-5{
+    left: 400px;
+    top: 0px;
+}
+
+.line-6{
+    left: 500px;
+    top: 0px;
+}
+
+.line-7{
+    left: 600px;
+    top: 0px;
+}
+
+.line-8{
+    left: 700px;
+    top: 0px;
+}
+
+.line-9{
+    left: 800px;
+    top: 0px;
+}
+.line-10{
+    top: 0;
+}
+.line-11{
+    top: 100px;
+}
+.line-12{
+    top: 200px;
+}
+.line-13{
+    top: 300px;
+}
+.line-14{
+    top: 400px;
+}
+.line-15{
+    top: 500px;
+}
+
+

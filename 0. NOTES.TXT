@@ -929,18 +929,535 @@ it will make div disapper but does not leave its place
 
 QUE 14 :- What is position in css? 
 
+The position Property :- The position property specifies the type of positioning method used for an element.
+
+The position property in css is used to control the positioning of elements withi a web page. It defines how an element should be placed relative to its normal position in the document flow or relative to its parent or containing elements.
 
 
 
+There are five different position values:
+
+static
+relative
+fixed
+absolute
+sticky
+
+static -  position: static;
+it is by default all element has static. it is a normal flow
+
+relative - position: relative;
+in position relative box move around according to its actual place and it does not leave its space.
+
+absolute - position: absolute;
+it take position according to its position parent (the parent is positioned, when its parent has position property other than static ) and it leaves it place if it is position relative and another element takes its place.
+
+fixed - position: fixed;
+it react according to viewport it take left right top bottom property according to html. and it get fixed when it's left right id defined
+Elements with position: fixed; are positioned relaive tothe viewpot , so they remain in the same position even when the page is scrolld, you can use top. right, bottom, and left properties to specify the exact positon.
+
+sticky - position: sticky;
+it will move but if specified top or left value it will stick to that position and dont move after that
+Elements with position: sticky; ar initially positioned according to the normal flow. but they become "sticky" and stay within the viweport once they reach a specified scroll position.
+
+and we can define from where and how much to move an element it can be dont by applay position property
+
+top - top: 15px;
+
+left - left: 0;
+
+bottom - bottom: 10px;
+
+right - right: 20px;
+
+LAYER AND Z-INDEX :- we can applay z-indenx only when it is position element
+
+z-intex property in css is used to control the stacking otder of elements on a web page. it determines which should appeat in frnt of behid other behind other elements when they overlap in the same page. elements with higher z-index values are placed in front of elements with lower z-index values.
+
+z-index:1;
+
+the element has highest index value it will apperat at top
 
 
+--------------------------------------------------------
+
+QUE 15 :- What is overflow in css?
+
+The css multi-coloum layout allows easy defination of multiple coloumns of text - just like in newspapers
+
+column-count: ; -> it is used to define column, in how many column we want to display coloumn
+
+column-rule: ; -> it is used to define rule between two coloumn
+
+column-gap: ; -> it is used to define coloumn gap
 
 
+--------------------------------------------------------
 
+QUE 16 :- Css flexbox?
+CONTAINER PROPERTY ---
+
+New module in CSS3 to easy align elements in different directions and orders, Flexbox is to give container the  ability to expand and shrink elements to best use all the available space. Css flexbox layout replaces float layout. New way to build one-dimensional layouts.
+
+1. flexbox -> it is used to make a container flex box and we can move container items horizontaly and vertically.
+=> display: flex;
+
+2. flex direction -> it is used to define the direction of element inside the flex container either coloumn or row.
+
+a. flex-direction-row -> it is used to flote element of a container in a row (hoizontaly) left to right which is by defaylt. 
+flex-direction: row;
+
+b. flex-direction-row-reverse -> in row reverse it will start all the content of a continer float from the left to right in reverse order.
+flex-direction: row-reverse;
+
+c. flex direction coloumn -> it is used to define flex direction coloum flex container items flow from top to bottom vertically.
+=> flex-direction: column;
+
+d. flex direction coloumn reverse -> it is used to reverse the coloumn last element start from the first and goes to end first element will place to lsat and it start from bottom to top.
+=> flex-direction: column-reverse;
+
+
+3. flex-wrap -> in flex wrap it will try to wrap all the element inside the given width of a container without adjusting the origina width of an element inside the container
+
+flex-wrap: wrap;
+flex-wrap: wrap-reverse; -> it will wrap last elemnt first and then so on.
+flex-wrap:no-wrap; -> it will not wrap the element which is by default.
+flex-flow:direction,flex-wrap;
+
+4. justifiy content -> it is used to align items horizontally in different style.  
+
+.. justify-content: center; 
+.. justify-content: space-between; 
+.. justify-content: space-around;
+.. justify-content: space-evenly;
+.. justify-content: end;
+.. justify-content: flex-end;
+.. justify-content: start;
+.. justify-content: flex-start;
+
+5. align item -> it is used to align items vertically in different style.  
+
+.. align-items: center;
+.. align-items: baseline;
+.. align-items: end;
+.. align-items: flex-end;
+.. align-items: self-end;
+.. align-items: start;
+.. align-items: flex-start;
+.. align-items: self-start;
+
+6. align-content -> it is used to set vertical alighment it work when it has 2 or more rows.
+
+.. align-content: flex-start;
+.. align-content: flex-end
+.. align-content: center;
+.. align-content: stretch;
+.. align-content: space-around;
+.. align-content: space-between;
+.. align-content: space-evenly;
+
+
+ITEMS PROPERTY ---
+
+1. order -> it is used to define the order of the item of flex container we define the order in number which item contain largest it comes in last.
+order:1;
+
+2. flex-grow -> it is used to grow the item of the continer.
+flex-grow:2;
+
+3. flex-shrink -> it is used to shrink the flex items by default it has 1 but if value more then 1 it will shrink more then other element larger number shrink more
+flex-shrink:1;
+
+4. aligh-self -> it is used to aligh the seprate items of the flex container like aligh-items it is same like aligh-item property but it works in individual items 
+.. align-self: center;
+.. align-self: baseline;
+.. align-self: flex-end;
+.. align-self: self-end;
+.. align-self: start;
+.. align-self: flex-start;
+.. align-self: self-start;
+.. align-self: end;
+.. align-self: auto;
+
+5. flex-basics -> it is used to handle the width of flex items of the flex container.
+
+6. flex -> it short hand of flex shrink, flex grow, flex basics;
+
+flex: flex-grow, flex-shring, flex-basis:
+
+
+--------------------------------------------------------
+
+QUE 17 :- What is grid?
+
+
+Grid -> it is two dimensional layouting system which helps to manage horizontal and verticl aligment at the same time.
+
+diaplay grid -> it is used initilize a container a grid box.
+display: grid; 
+
+----------- GRID CREATION
+
+grid-template-columns -> it is used to define number and width of the coloumns.
+grid-template-columns: 200px 200px 200px; -> it will create three coloumns of 200px in width.
+grid-template-columns: 200px 200px auto; -> it will create first two coloumns of 200px and third coloumns will take remaining space.
+grid-template-columns: 25% 25%; -> we can also define its width in percentage. it will create 2 coloumns of 25% width of it parent container.
+grid-template-columns: 1fr 1fr; -> it is used to devide the coloumns in the given frection fr means frection i will create the two coloumn of same width it will decide the fullwidth in two frection of equal width
+grid-template-columns: repeat(3, 1fr); -> it is used to repeat the given coloumns width we not have to write the width of coloumn every time.
+grid-template-columns: repeat(2, 200px) 1fr; it is create first two coloumn of same width and third of one frection of the container.
+
+grid-template-rows -> we can use all the decleration same as coloumns it will works on rows.
+
+----------- GRID GAP
+
+grid-gap -> it is use to define gap between coloumn and rows.
+gap:1rem; -> i will applay gap in row and coloumn
+gap: 1rem 1rem;
+gap: row-gap coloumn-gap;
+
+----------- GRID POSITINING
+
+grid-row-start: 2; -> it is used to tell the start line of row.
+grid-row-end: 3; -> it is used to tell the end line of row.
+grid-column-start: 3; -> it is used to tell the start line of coloumn.
+grid-column-end: 4; -> it is used to tell the end line of coloumn.
+
+short hand of grid-row-start, grid-row-end
+grid-row: grid-row-start / grid-row-end;
+grid-row: 2/3;1
+
+short hand of grid-column-start, grid-column-end
+grid-column: grid-column-start / grid-column-end;
+grid-column: 2/3;
+
+short hand of grid-row-start, grid-row-end --- grid-column-start, grid-column-end --- grid-row --- grid-column
+grid-area:  grid-row-start/ grid-column-start / grid-row-end  / grid-column-end ;
+grid-area: 2/1/3/2;
+
+----------- GRID SPANNING
+grid spanning -> in grid spaning grid occupay or enter in other coloumn also is called grid spanning.
+grid-area: 1/1/2/3;
+
+grid-row:1/span 3; it will cover the three row.
+grid-column:1/span 3; it will cover the three column.
+
+grid-row:1/-1; it will cover all row from starting to end
+grid-column:1/-1; it will cover all coloumn from starting to end
+
+----------- GRID LINE NAMING
+
+it is used to name the line like given below
+grid-template-columns: repeat(3,[col-start] 1fr[col-end]);
+grid-template-rows: [header-start] 120px [header-end menu-start] 60px [menu-end box-start] 100px[box-end content-start] 400px[content-end footer-start] 50px [footer-end] ;
+
+and how this is used 
+grid-area: header-start/col-start 1/header-end/col-end 3;
+
+----------- GRID AREA NAMING
+
+it is used to name grid and style
+
+grid-area: header;
+grid-area: menu;
+grid-area: box-2;
+grid-area: box-1;
+grid-area: aside;
+grid-area: footer;
+
+grid-template-areas: 
+
+"header header .(it is used to make empty grid)"
+"menu menu menu"
+"box-1 box-2 aside"
+"content content aside"
+"footer footer footer"
+;
+
+----------- MIX MAX() FUNCTION, MAX-COTENT, MIN-CONTENT
+
+max-content for coloumn -> it is used to give the grid cell the required width according to content (jitne content hai utna he width hote hai). it do not break the line if content is text content
+grid-template-columns: max-content 1fr 1fr 1fr;
+
+min-content coloumn -> jo sabse bada shabd hota hai utne he cell ke width hote hai.
+grid-template-columns: 1fr 1fr 1fr min-content;
+min content for row -> it will take height acording to content (jitna content hota hai utne he hight leta hai)
+
+MIN MAX FOR ROW -> it will take minimum width  (jitne minimum height denge wo to lega par content badhne par apna height adjust kar lega)
+grid-template-rows:  repeat(2, minmax(minimum-value, maximum-value));
+grid-template-rows:  repeat(2, minmax(150px, min-content));
+grid-template-columns: minmax(150px, 1fr) 1fr 1fr min-content;
+
+----------- IMPLICIT AND EXPLICIT GRID
+
+explicit grid -> those grid in which we defined there length explicit.
+implicit grid -> those grid whose length is not defined if called implicit grid.
+
+grid-auto-flows -> it is used to define the flow of grid cell means (jo naye grid cell bannenge wo kaha add honge row mai ya coloumn wo define karte by giveing row or coloum in value, default row he hota hai)
+grid-auto-flow: column; by default is row
+
+grid-auto-rows -> it is used to define the height of a implicit grid.
+grid-auto-rows: 50px;
+
+grid-auto-columns -> it is used to define the lenght of implicit grid in columns.
+
+----------- ALIGNING GRID ITEMS
+
+VERTICALLY ALIGNMENT OF GRID ITEM
+Align-items -> it has four value center for center, end for end, start for start, strech for strech which is default and baseline for baseline aligment.
+align-items:center;
+align-items:baseline;
+align-items:start;
+align-items:end;
+align-items:strech;
+
+HORIZONTAL AIGNMENT OF GRID ITEMS
+justify-items: baseline;
+justify-items: start;
+justify-items: end;
+justify-items: center;
+justify-items: strech;
+
+SHORT HAND OF ALIGN-ITEMS, JUSTIY-ITEMS
+place-items: align-items, justify-items;
+place-items: center center;
+
+-------------------------------------------
+
+VERTICLE ALIGNMENT OF GRID SELF. (INDIVISUAL GRID CELL IS CALLED SELF)
+align-self: center;
+align-self: start;
+align-self: end;
+align-self: baseline;
+align-self: strech;
+
+HORIZONTAL ALIGNMENT OF GRID SELF. (INDIVISUAL GRID CELL IS CALLED SELF)
+justify-self: baseline;
+justify-self: start;
+justify-self: end;
+justify-self: center;
+justify-self: strech;
+
+SHORT HAND OF ALIGN-SELF, JUSTIY-SELF
+place-self: align-self, justify-self;
+place-self: center start;
+
+-------------------------------------------
+
+GRID TRACT ALIGNING PROPERTIES
+
+justify-content -> it is used to align content like flex horizontaly.
+justify-content: start;
+justify-content: end;
+justify-content: center;
+justify-content: strech;
+justify-content: space-around;
+justify-content: space-between;
+justify-content: space-evenly;
+
+align-content -> it is used to align content like flex vertically.
+align-content: start;
+align-content: end;
+align-content: center;
+align-content: strech;
+align-content: space-around;
+align-content: space-between;
+align-content: space-evenly;
+
+place-content -> it is short hand of align-content and justify-content.
+place-content: align-content justify-content;
+place-content: space-evenly space-between;
+
+----------- AUTO-FILL AND AUTO-FIT
+
+grid-template-columns: repeat(auto-fill, 100px); -> it will create extra tracks if width is remaining.
+grid-template-columns: repeat(auto-fit, 100px); -> it fit all the grid cell in the remaing spaces it does not goes in the next row until the width is covered
+
+----------- FIT-CONTENT
+
+fit-content -> it is used to give max-width of a content by default it will work as a max content but if content exced to its given width it will not axced to its given width
+grid-template-columns: fit-content(200px) fit-content(300px) 1fr 1fr;
+
+----------- ORDER
+order -> it works same like order in flex.
+order:1;
+
+--------------------------------------------------------
+
+QUE 18 :- What is transition?
+
+CSS TRANSITION  
+
+transition-property: all; 
+it is used to define in what we have to add transition. we can define specificaly what we want to transition but in all value of transition property it will change all.
+
+transition-duration: 2s;
+it is used to define the duration of transition in given time it will complete the transition.
+
+transition-delay: 2s;
+it is used to define delay of transition it will starts or end the transition in given time.
+
+transition-timing-function: ease;
+it is used to define type of transition.
+
+
+transition: property duration timting-function delay;
+is is a short hand notaion of transition.
+------
+
+transition-property -> it is used to define on which property we want to applay transition we can applay on a single property or all at once.
+transition-property: width; 
+transition-property: all; 
+
+transition-duration -> it is used to define duration of transition
+transition-duration: 1s;
+
+transition-delay -> it is used to define delay in transition
+transition-delay: 1s;
+
+transition-timing-function -> it is used to define the style of transition.
+transition-timing-function: ease;
+
+transition -> it is the short hand we can applay all the transition property at once.
+transition: property, duration, timing function, delay;
+transition: all 0.5s ease 1s; 
 
 
 
 
 --------------------------------------------------------
 
-QUE 12 :- 
+QUE 19 :- What is transformation in css?
+
+
+CSS 2D TRANSFORMATION  
+
+1. Transform -> in transform we can rotate,move,scale,scew it only work with block or inline block element.
+
+a. translate() -> it is used to move an element in x and y axis.
+
+transform: translate(10px,10px);
+transform: translate(x-axis,y-axis);
+
+transform: translateY(10px);
+transform: translateY(only y-axis);
+
+transform: translateX(10px);
+transform: translateX(only x-axis);
+
+b. rotate() -> it is used to rorate an element.
+transform:rotate(10deg);
+transform:rotate(value in degree); by default rotate from its center
+
+c. scale() -> it is used to increase size of an element
+
+transform: scale(1,2);
+transform: scale(width,height); it multiply current length by the provided value
+
+transform: scaleX(2);
+transform: scaleX(only width);
+
+transform: scaleY(2);
+transform: scaleY(only height);
+
+d. skew -> it is used to rorate its sides
+transform: skew(0deg, 0deg);
+transform: skew(x-axis, y-axis);
+
+transform: skewX(10deg);
+transform: skewX(x-axis);
+
+transform: skewY(10deg);
+transform: skewY(y-axis);
+
+e. transform origin -> we can also define the transform origin (from which point we want to rotate).
+transform-origin: 50% 100%;
+transform-origin:x-axis y-axis;
+
+f. matix we can use all the transform property at once in matrix 
+transform: matrix(scaleX(), scaleY(), skewX(), skewY(), translateX(), translateY()); 
+
+CSS 3D TRANSFORMATION  
+
+Transform rotateX ->
+transform:perspective(800px) rotateX(50deg);
+
+Transform rotateY ->
+transform:perspective(800px) rotateY(50deg);
+
+Transform rotateZ ->
+transform:perspective(800px) rotateZ(50deg);
+
+Transform translatez ->
+transform:perspective(800px) rotateY(60deg) translateZ(200px);
+
+Transform translate3d ->
+transform:perspective(800px) rotateY(60deg) translate3d(50px, 50px, 1px);
+
+Transform scaleZ ->
+transform:perspective(800px) scaleZ(2) rotateY(60deg) ;
+
+Transform scale3d ->
+transform:perspective(800px) scale3d(2,2,2) rotateY(60deg) ;
+
+--------------------------------------------------------
+
+QUE 20 :- What is animation?
+CSS ANIMATION
+
+
+animation-name ->> it is used to define animation name.
+animation-name: sample;
+
+
+animation-duration ->> it is used to define duration.
+animation-duration: 2s;
+
+animation-iteration-count ->> it is used to define how many times we want play animation it can be 1,2,3--n or infinete
+animation-iteration-count: infinite;
+
+animation-delay ->> it is used to define delay to start animation
+animation-delay: 2s;
+
+animation-direction ->> it is used to define animation direction
+animation-direction: alternate;
+
+animation-timing-function ->> 
+ease - slow start,then fast, then and slowly
+linear - same speed start to end
+ease-in - slow start
+ease-out - slow end
+ease-in-out - slow start and end
+setp-start equivalent to setps (1,srart)
+setp-end equivalent to setps (1,end)
+setps(#, start/end) 
+cubic-bezier lets your define your own values (0 to 1)
+
+animation ->> short hand property 
+animation: sample 2s ease 2s infinite alternate;
+animation: name duration timing-function delay iteration-count direction fill-mode;
+
+keyframe from to ->>
+
+@keyframes sample {
+
+    from {
+        border-radius: 0%;
+    }
+
+    to {
+        border-radius: 50%;
+    }
+
+}
+
+@keyframes sample {
+
+    0% {
+        border-radius: 0%;
+    }
+
+    100% {
+        border-radius: 50%;
+    }
+
+}

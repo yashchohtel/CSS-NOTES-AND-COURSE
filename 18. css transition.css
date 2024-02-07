@@ -1,0 +1,37 @@
+/* 
+
+transition-property: all; 
+it is used to define in what we have to add transition. we can define specificaly what we want to transition but in all value of transition property it will change all.
+
+transition-duration: 2s;
+it is used to define the duration of transition in given time it will complete the transition.
+
+transition-delay: 2s;
+it is used to define delay of transition it will starts or end the transition in given time.
+
+transition-timing-function: ease;
+it is used to define type of transition.
+
+
+transition: property duration timting-function delay;
+is is a short hand notaion of transition.
+------
+
+transition-property -> it is used to define on which property we want to applay transition we can applay on a single property or all at once.
+transition-property: width; 
+transition-property: all; 
+
+transition-duration -> it is used to define duration of transition
+transition-duration: 1s;
+
+transition-delay -> it is used to define delay in transition
+transition-delay: 1s;
+
+transition-timing-function -> it is used to define the style of transition.
+transition-timing-function: ease;
+
+transition -> it is the short hand we can applay all the transition property at once.
+transition: property, duration, timing function, delay;
+transition: all 0.5s ease 1s; 
+
+*/

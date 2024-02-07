@@ -667,7 +667,7 @@ background: radial-gradient(shape,color-1, color-2);
 24. CSS OVERFLOW
 24. CSS OVERFLOW
 
-when the content exceed the height and it overflow the box thenwe use overflow property it to style extra content by default it is overflow visible.
+when the content exceed the height and it overflow the box then we use overflow property it to style extra content by default it is overflow visible.
 
 overflow: visible; by default it is visible.
 
@@ -1638,7 +1638,7 @@ grid-column-end: 4; -> it is used to tell the end line of coloumn.
 
 short hand of grid-row-start, grid-row-end
 grid-row: grid-row-start / grid-row-end;
-grid-row: 2/3;
+grid-row: 2/3;1
 
 short hand of grid-column-start, grid-column-end
 grid-column: grid-column-start / grid-column-end;

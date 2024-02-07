@@ -1,0 +1,18 @@
+/* 
+CSS OVERFLOW
+
+when the content exceed the height and it overflow the box then we use overflow property it to style extra content by default it is overflow visible.
+
+overflow: visible; by default it is visible.
+
+overflow: hidden; it is used to hind the over content.
+
+overflow: scroll; it is used to make the content scroll able if it overflow the box we can scroll the not visible content
+
+overflow-x: hidden; it is used to hide over of particular axis
+
+overflow-y: scroll; it is used to make content scroleable on a particular axis
+
+overflow: auto; it automaticlly make the scroll bar according to the content
+
+*/
