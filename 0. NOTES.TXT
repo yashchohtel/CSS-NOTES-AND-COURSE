@@ -1460,4 +1460,60 @@ keyframe from to ->>
         border-radius: 50%;
     }
 
-}
+}SPECIFICITY 
+
+In internal, external and inline css :-
+inline css has top most priorty in all of them. And in internal and external css it depends which is written in last last one has most priorty.
+has more priorty.
+
+in element selector or class. class has more priorty.
+
+in id class and inline css inline has more priorty.
+if we target the element we want to style if we speficy them very accurately it will applay the more acurate style to element.
+
+Specificity rule Trick (point system) - 
+
+10000 point to !important
+1000  point to inline
+100   to id
+10    to class, attribute or pseudo class
+1     for element selector and pseudo element
+0     to universal selector
+
+
+1. in internal and external and inline inline has more priorty
+2. in internal and external css which one link in last has more priorty.
+3. if we write different style in same element/selector last one has more priorty.
+4. if we select element more speficyly it will applay the more speficyly defined style in element
+5. in class and id. id has more priorty
+
+--------------------------------------------------------
+
+QUE 21 :- What is specificity ?
+
+SPECIFICITY 
+
+In internal, external and inline css :-
+inline css has top most priorty in all of them. And in internal and external css it depends which is written in last last one has most priorty.
+has more priorty.
+
+in element selector or class. class has more priorty.
+
+in id class and inline css inline has more priorty.
+if we target the element we want to style if we speficy them very accurately it will applay the more acurate style to element.
+
+Specificity rule Trick (point system) - 
+
+10000 point to !important
+1000  point to inline
+100   to id
+10    to class, attribute or pseudo class
+1     for element selector and pseudo element
+0     to universal selector
+
+
+1. in internal and external and inline inline has more priorty
+2. in internal and external css which one link in last has more priorty.
+3. if we write different style in same element/selector last one has more priorty.
+4. if we select element more speficyly it will applay the more speficyly defined style in element
+5. in class and id. id has more priorty.
