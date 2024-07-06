@@ -8,6 +8,7 @@
 
 
 
+
 <<<<<<< HEAD
 QUE 1 :- What is CSS
 Css stands for Cascading Style Sheets (css). It is a stylesheet language sued to descride the look And presentation of a document writen in HTML or XML. It defines how elements are displayed on a web page. Css makes website visually appealing and user-friendly.
